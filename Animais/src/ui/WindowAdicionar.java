@@ -131,11 +131,11 @@ public class WindowAdicionar extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAdicionarActionPerformed
 
     private void txtAnimalFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtAnimalFocusLost
-        lblCaracteristica.setText("Um(a) " + txtAnimal.getText() + " ________ mas " + this.noAtual.getDado() + " um não.");
+        lblCaracteristica.setText("Um(a) " + txtAnimal.getText() + " ________ mas um " + this.noAtual.getDado() + " não.");
     }//GEN-LAST:event_txtAnimalFocusLost
 
     private void txtAnimalKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtAnimalKeyReleased
-        lblCaracteristica.setText("Um(a) " + txtAnimal.getText() + " ________ mas " + this.noAtual.getDado() + " um não.");
+        lblCaracteristica.setText("Um(a) " + txtAnimal.getText() + " ________ mas um " + this.noAtual.getDado() + " não.");
     }//GEN-LAST:event_txtAnimalKeyReleased
 
 
