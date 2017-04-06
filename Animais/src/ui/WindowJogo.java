@@ -58,6 +58,7 @@ public class WindowJogo extends javax.swing.JFrame {
         setTitle("Jogo dos Animais - Jogo");
         getContentPane().setLayout(new java.awt.GridBagLayout());
 
+        lblTexto.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         lblTexto.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTexto.setText("jLabel1");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -80,8 +81,8 @@ public class WindowJogo extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 1;
         gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.ipadx = 11;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.VERTICAL;
+        gridBagConstraints.ipadx = 40;
         gridBagConstraints.ipady = 11;
         gridBagConstraints.insets = new java.awt.Insets(11, 11, 11, 11);
         getContentPane().add(btnSim, gridBagConstraints);
@@ -97,7 +98,7 @@ public class WindowJogo extends javax.swing.JFrame {
         gridBagConstraints.gridy = 1;
         gridBagConstraints.gridwidth = 2;
         gridBagConstraints.fill = java.awt.GridBagConstraints.VERTICAL;
-        gridBagConstraints.ipadx = 11;
+        gridBagConstraints.ipadx = 40;
         gridBagConstraints.ipady = 11;
         gridBagConstraints.insets = new java.awt.Insets(11, 11, 11, 11);
         getContentPane().add(btnNao, gridBagConstraints);

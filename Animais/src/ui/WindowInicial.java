@@ -9,7 +9,7 @@ import java.awt.Dimension;
  */
 public class WindowInicial extends javax.swing.JFrame {
 
-    static NoArvore raiz;
+    private static NoArvore raiz;
     
     public WindowInicial() {
         initComponents();

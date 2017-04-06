@@ -26,6 +26,9 @@
   <SubComponents>
     <Component class="javax.swing.JLabel" name="lblTexto">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="12" style="1"/>
+        </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="text" type="java.lang.String" value="jLabel1"/>
       </Properties>
@@ -44,7 +47,7 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
-          <GridBagConstraints gridX="0" gridY="1" gridWidth="2" gridHeight="1" fill="1" ipadX="11" ipadY="11" insetsTop="11" insetsLeft="11" insetsBottom="11" insetsRight="11" anchor="10" weightX="0.0" weightY="0.0"/>
+          <GridBagConstraints gridX="0" gridY="1" gridWidth="2" gridHeight="1" fill="3" ipadX="40" ipadY="11" insetsTop="11" insetsLeft="11" insetsBottom="11" insetsRight="11" anchor="10" weightX="0.0" weightY="0.0"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -57,7 +60,7 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
-          <GridBagConstraints gridX="2" gridY="1" gridWidth="2" gridHeight="1" fill="3" ipadX="11" ipadY="11" insetsTop="11" insetsLeft="11" insetsBottom="11" insetsRight="11" anchor="10" weightX="0.0" weightY="0.0"/>
+          <GridBagConstraints gridX="2" gridY="1" gridWidth="2" gridHeight="1" fill="3" ipadX="40" ipadY="11" insetsTop="11" insetsLeft="11" insetsBottom="11" insetsRight="11" anchor="10" weightX="0.0" weightY="0.0"/>
         </Constraint>
       </Constraints>
     </Component>

@@ -8,7 +8,7 @@ public class NoArvore {
     
     private NoArvore filhoDir;
     private NoArvore filhoEsq;
-    private String dado;
+    private String dado; /* String de pergunta ou nome do animal */
     
     public NoArvore(String dado) {
         this.dado = dado;

@@ -24,7 +24,12 @@ public class DebugArvore extends javax.swing.JFrame {
         setResizable(false);
         setLocationRelativeTo(null);
         
-        getPossiveisAnimais(this.noAtual);
+        if (noAtual.getFilhoDir() == null && noAtual.getFilhoEsq() == null)
+            animais += noAtual.getDado();
+        else
+            getPossiveisAnimais(this.noAtual);
+        
+        txtAnimais.setText(animais);
     }
     
     private void getPossiveisAnimais(NoArvore noAtual) {
@@ -38,7 +43,6 @@ public class DebugArvore extends javax.swing.JFrame {
                 animais += noAtual.getFilhoEsq().getDado() + "\n";
             getPossiveisAnimais(noAtual.getFilhoEsq());
         }
-        txtAnimais.setText(animais);
     }
 
     @SuppressWarnings("unchecked")
@@ -49,6 +53,7 @@ public class DebugArvore extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         txtAnimais = new javax.swing.JTextArea();
         jLabel1 = new javax.swing.JLabel();
+        btnFechar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Jogo dos Animais - Debug Arvore");
@@ -77,11 +82,31 @@ public class DebugArvore extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(7, 7, 7, 7);
         getContentPane().add(jLabel1, gridBagConstraints);
 
+        btnFechar.setText("Fechar");
+        btnFechar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFecharActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.ipadx = 10;
+        gridBagConstraints.ipady = 10;
+        gridBagConstraints.insets = new java.awt.Insets(8, 8, 8, 8);
+        getContentPane().add(btnFechar, gridBagConstraints);
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btnFecharActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFecharActionPerformed
+        dispose();
+    }//GEN-LAST:event_btnFecharActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnFechar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea txtAnimais;
