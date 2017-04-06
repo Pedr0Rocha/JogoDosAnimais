@@ -36,6 +36,8 @@ public class WindowAcertou extends javax.swing.JFrame {
         jLabel1.setText("jLabel1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Jogo dos Animais - Acertou");
+        setAlwaysOnTop(true);
         getContentPane().setLayout(new java.awt.GridBagLayout());
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);

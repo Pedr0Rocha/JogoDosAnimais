@@ -29,14 +29,11 @@ public class WindowJogo extends javax.swing.JFrame {
     }
     
     private void comecaJogo() {
-        System.out.println("Adivinhando " + adivinhando);
         this.noAtual = this.raiz;
-        System.out.println("No atual " + this.noAtual.getDado());
         fazPergunta(this.noAtual.getDado());
     }
     
     private void rodaJogo() {
-        System.out.println("Rodando jogo");
         if (!this.noAtual.ehFolha())
             fazPergunta(this.noAtual.getDado());
         else

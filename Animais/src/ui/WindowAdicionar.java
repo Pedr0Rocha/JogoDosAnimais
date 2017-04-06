@@ -24,7 +24,7 @@ public class WindowAdicionar extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         setAlwaysOnTop(true);
 
-        lblCaracteristica.setText("Um(a) tem _____ mas " + this.noAtual.getDado() + " um não.");
+        lblCaracteristica.setText("Um(a)  _____ mas um " + this.noAtual.getDado() + " não.");
     }
 
     @SuppressWarnings("unchecked")
@@ -55,6 +55,11 @@ public class WindowAdicionar extends javax.swing.JFrame {
                 txtAnimalFocusLost(evt);
             }
         });
+        txtAnimal.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txtAnimalKeyReleased(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 1;
@@ -64,7 +69,7 @@ public class WindowAdicionar extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(9, 9, 9, 9);
         getContentPane().add(txtAnimal, gridBagConstraints);
 
-        lblCaracteristica.setText("Um(a) tem _____ mas um não.");
+        lblCaracteristica.setText("Um(a)  _____ mas um não.");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 2;
@@ -73,6 +78,8 @@ public class WindowAdicionar extends javax.swing.JFrame {
         gridBagConstraints.ipady = 9;
         gridBagConstraints.insets = new java.awt.Insets(9, 9, 9, 9);
         getContentPane().add(lblCaracteristica, gridBagConstraints);
+
+        txtCaracteristica.setToolTipText("Digite por exemplo \"tem juba, é domesticável, etc.\"");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 3;
@@ -115,6 +122,10 @@ public class WindowAdicionar extends javax.swing.JFrame {
     private void txtAnimalFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtAnimalFocusLost
         lblCaracteristica.setText("Um(a) " + txtAnimal.getText() + " ________ mas " + this.noAtual.getDado() + " um não.");
     }//GEN-LAST:event_txtAnimalFocusLost
+
+    private void txtAnimalKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtAnimalKeyReleased
+        lblCaracteristica.setText("Um(a) " + txtAnimal.getText() + " ________ mas " + this.noAtual.getDado() + " um não.");
+    }//GEN-LAST:event_txtAnimalKeyReleased
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

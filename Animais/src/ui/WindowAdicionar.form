@@ -37,6 +37,7 @@
     <Component class="javax.swing.JTextField" name="txtAnimal">
       <Events>
         <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtAnimalFocusLost"/>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtAnimalKeyReleased"/>
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
@@ -46,7 +47,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblCaracteristica">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Um(a) tem _____ mas um n&#xe3;o."/>
+        <Property name="text" type="java.lang.String" value="Um(a)  _____ mas um n&#xe3;o."/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
@@ -55,6 +56,9 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="txtCaracteristica">
+      <Properties>
+        <Property name="toolTipText" type="java.lang.String" value="Digite por exemplo &quot;tem juba, &#xe9; domestic&#xe1;vel, etc.&quot;"/>
+      </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
           <GridBagConstraints gridX="0" gridY="3" gridWidth="1" gridHeight="1" fill="2" ipadX="9" ipadY="9" insetsTop="9" insetsLeft="9" insetsBottom="9" insetsRight="9" anchor="10" weightX="0.0" weightY="0.0"/>
