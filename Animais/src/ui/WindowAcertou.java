@@ -17,6 +17,7 @@ public class WindowAcertou extends javax.swing.JFrame {
 
     private void myInits() {
         setSize(new Dimension(400, 300));
+        setResizable(false);
         setLocationRelativeTo(null);
         setAlwaysOnTop(true);
     }
