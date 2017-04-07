@@ -38,7 +38,7 @@ public class NoArvore {
         this.dado = dado;
     }
     
-    public boolean ehFolha() {
+    public boolean isFolha() {
         if (this == null) 
             return false;
         else

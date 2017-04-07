@@ -34,7 +34,7 @@ public class WindowJogo extends javax.swing.JFrame {
     }
     
     private void rodaJogo() {
-        if (!this.noAtual.ehFolha())
+        if (!this.noAtual.isFolha())
             fazPergunta(this.noAtual.getDado());
         else
             adivinharAnimal();
@@ -122,7 +122,7 @@ public class WindowJogo extends javax.swing.JFrame {
             adivinhando = false;
             acertouAnimal();
         } else {
-            if (!this.noAtual.ehFolha()) {
+            if (!this.noAtual.isFolha()) {
                 this.noAtual = this.noAtual.getFilhoDir();
                 rodaJogo();
             }
@@ -134,7 +134,7 @@ public class WindowJogo extends javax.swing.JFrame {
             adivinhando = false;
             adicionaAnimal();
         } else {
-            if (!this.noAtual.ehFolha()) {        
+            if (!this.noAtual.isFolha()) {        
                 this.noAtual = this.noAtual.getFilhoEsq();
                 rodaJogo();
             }
