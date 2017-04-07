@@ -119,6 +119,9 @@ public class WindowAdicionar extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAdicionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdicionarActionPerformed
+        if (txtAnimal.getText().isEmpty() || txtCaracteristica.getText().isEmpty())
+            return;
+        
         String animalCerto = txtAnimal.getText();
         String novaCaracteristica = txtCaracteristica.getText();
         String animalErrado = this.noAtual.getDado();
